@@ -1,0 +1,56 @@
+// In the switch case, depending on which case it is, change the state variables accordingly. E.G. Check USER_LOADED. the user is transmitted via the payload, so I gather it here and put it in the user state variable, and change all the others accordingly. (the variables that need to be changed, not necessarily all of them, because the rest that remain unchanged are kept in the ...state, which we take all the time, by default, as the first state variable *look below* )
+
+import {
+    REGISTER_SUCCESS,
+    REGISTER_FAIL,
+    USER_LOADED,
+    AUTH_ERROR,
+    LOGIN_SUCCESS,
+    LOGIN_FAIL,
+    LOGOUT,
+    CLEAR_ERRORS
+} from '../types';
+
+export default (state, action) => {
+    switch (action.type) {
+        case USER_LOADED: 
+        return {
+            ...state,
+            isAuthenticated: true,
+            loading: false,
+            user: action.payload
+        };
+        case REGISTER_SUCCESS: 
+        case LOGIN_SUCCESS:
+            localStorage.setItem('token', action.payload.token) // set the token to action.payload.token. the token is in the local storage
+        return {
+            ...state,
+            ...action.payload,
+            isAuthenticated: true,
+            loading: false
+        };
+        case REGISTER_FAIL: 
+        case AUTH_ERROR:
+        case LOGIN_FAIL:
+        case LOGOUT:
+            localStorage.removeItem('token');
+            return {
+                ...state,
+                token:null,
+                isAuthenticated: false, 
+                loading: false,
+                user: null,
+                error: action.payload
+            };
+        case CLEAR_ERRORS: 
+            return {
+                ...state,
+                error:null,
+                loading: false
+            };
+            
+
+        default: 
+        return state;
+    }
+}
