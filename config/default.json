@@ -1,4 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://sorinpav:Wishmaster10!@addressbook-zlnb9.mongodb.net/test?retryWrites=true&w=majority",
+    "mongoURI": "mongodb+srv://<username>:<password>@addressbook-zlnb9.mongodb.net/test?retryWrites=true&w=majority",
     "jwtSecret": "secret"
 }
