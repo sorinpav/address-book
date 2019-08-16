@@ -19,6 +19,7 @@ app.use('/api/contacts', require('./routes/contacts'));
 
 
 PORT = process.env.PORT || 5000;
+HELLO = 'github Test';
 
 var server = app.listen(PORT, () => console.log(`Server is running on port ${PORT}`)); 
 
