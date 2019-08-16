@@ -35,11 +35,17 @@ Each used context is written in 3 files:
 
 In this case, `...` represents any Context Name (i.e. for the alert context, we have AlertContext, AlertState, AlertReducer)
 
-### To run the project, please execute the `Available Scripts` in the order shown.
+### To run the project, please:
+
+* clone the repository on your machine
+* edit `/config/default.json` as follows:
+  * "mongoURI": "mongodb+srv://`<username>`:`<password>`@addressbook-zlnb9.mongodb.net/test?retryWrites=true&w=majority"
+    * change <username> and <password> with your credentials from MongoDB
+* execute the `Available Scripts` in the order shown.
 
 ## Available Scripts
 
-To run the project, you need to execute, in a terminal of choice: 
+In a terminal of choice: 
 
 ### `git clone` <Repo Path Here>
 
