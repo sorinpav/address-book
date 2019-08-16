@@ -14,10 +14,10 @@ The project is a Fullstack Contact Keeper Web App.
 
 The Backend is done with Express. Persistent storage is achieved by MongoDB.
 
-It uses React on the Front-End, and because it is rather small, it's been bootstrapped with `create-react-app`. 
+It uses React on the Front-End, and it's been bootstrapped with `create-react-app`. 
 In case you want to document yourself about how to start a project in React, here's a [link](https://reactjs.org/docs/create-a-new-react-app.html)
 
-The project is using the context API since it is considered a small project. 
+The project is using the context API. 
 For larger projects, I recommend using Redux instead. 
 
 
