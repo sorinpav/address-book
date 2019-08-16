@@ -1,6 +1,8 @@
 # Address Book Project
 
 ## Netlify link for deployed version: [Netlify Link](https://brave-cori-49080b.netlify.com)
+P.S Currently the deployed version does not connect to MongoDB
+- [ ] chaange link to deployed version
 
 This project is meant to: 
 
