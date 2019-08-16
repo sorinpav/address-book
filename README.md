@@ -47,10 +47,6 @@ In this case, `...` represents any Context Name (i.e. for the alert context, we 
 
 In a terminal of choice: 
 
-### `git clone` <Repo Path Here>
-
-This clones the repository on your machine.
-
 ### `npm install` 
 
 This installs all the dependencies needed for the project
