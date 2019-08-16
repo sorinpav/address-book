@@ -1,6 +1,6 @@
 # Address Book Project
 
-## Netlify link for deployed version: [https://addressBook.netlify.com](https://addressBook.netlify.com)
+## Netlify link for deployed version: [Netlify Link](https://brave-cori-49080b.netlify.com)
 
 This project is meant to: 
 
