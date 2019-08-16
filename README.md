@@ -1,11 +1,15 @@
 # Address Book Project
 
-## Netlify link for deployed version: [https://findeer.netlify.com](https://findeer.netlify.com)
+## Netlify link for deployed version: [https://addressBook.netlify.com](https://addressBook.netlify.com)
 
 This project is meant to: 
 
 * Store, show, update and delete the user's contacts
 * Search for these contacts (filter them)
+
+
+## Screenshot of how it looks: 
+
 
 
 ## Tech stack behind it: 
@@ -35,7 +39,11 @@ In this case, `...` represents any Context Name (i.e. for the alert context, we 
 
 ## Available Scripts
 
-To run the project, you need to execute: 
+To run the project, you need to execute, in a terminal of choice: 
+
+### `git clone` <Repo Path Here>
+
+This clones the repository on your machine.
 
 ### `npm install` 
 
